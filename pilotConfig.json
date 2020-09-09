@@ -1,0 +1,168 @@
+[
+  {
+    "name": "kitchen",
+    "lighting": [
+      {
+        "name": "main",
+        "colors": [
+          "daylight",
+          "yellow",
+          "pink",
+          "magenta",
+          "green"
+        ]
+      },
+      {
+        "name": "above table",
+        "colors": [
+          "daylight",
+          "red",
+          "magenta",
+          "pink"
+        ]
+      },
+      {
+        "name": "tv",
+        "colors": [
+          "daylight",
+          "yellow",
+          "white"
+        ]
+      },
+      {
+        "name": "door",
+        "colors": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bedroom",
+    "lighting": [
+      {
+        "name": "main",
+        "colors": [
+          "daylight",
+          "blue",
+          "cyan"
+        ]
+      },
+      {
+        "name": "wardrobe",
+        "colors": [
+          "daylight",
+          "red",
+          "yellow"
+        ]
+      },
+      {
+        "name": "bed",
+        "colors": [
+          "daylight",
+          "pink",
+          "yellow",
+          "magenta",
+          "green",
+          "red",
+          "cyan"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bathroom",
+    "lighting": [
+      {
+        "name": "bath",
+        "colors": [
+          "daylight",
+          "pink",
+          "magenta",
+          "green",
+          "red",
+          "cyan"
+        ]
+      },
+      {
+        "name": "mirror",
+        "colors": [
+          "daylight",
+          "yellow",
+          "pink",
+          "magenta"
+        ]
+      },
+      {
+        "name": "main",
+        "colors": [
+          "daylight",
+          "yellow",
+          "pink",
+          "magenta",
+          "green",
+          "red",
+          "cyan",
+          "blue"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "living room",
+    "lighting": [
+      {
+        "name": "main",
+        "colors": [
+          "daylight",
+          "pink",
+          "magenta",
+          "green",
+          "red",
+          "cyan"
+        ]
+      },
+      {
+        "name": "couch",
+        "colors": [
+          "daylight",
+          "yellow",
+          "pink",
+          "magenta"
+        ]
+      },
+      {
+        "name": "window",
+        "colors": [
+          "daylight",
+          "yellow",
+          "pink"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "hall",
+    "lighting": [
+      {
+        "name": "main",
+        "colors": [
+          "daylight",
+          "pink",
+          "magenta",
+          "green",
+          "red",
+          "cyan"
+        ]
+      },
+      {
+        "name": "wardrobe",
+        "colors": [
+          "daylight",
+          "yellow",
+          "pink",
+          "magenta"
+        ]
+      }
+    ]
+  }
+]
