@@ -80,7 +80,26 @@ Cała konfiguracja aplikacja jest wczytywana z pliku [config.json](https://githu
 
 ## Interfejs
 
-zdjecia...
+- Widok głównego ekranu aplikacji
+
+![](images/main1.png)
+
+- U góry znajduję się menubar z której wybiera się konkretny pokój. Po wybraniu konkretnego pokoju wyświetlana jest lista świateł. 
+
+![](images/room1.png)
+
+- Również z poziomu każdego pokoju/ekranu można wyjść z aplikacji korzystając z przycisku ```exit```
+- Każde światło domyślnie jest wyłaczone więc najpierw należy go włączyć
+
+![](images/light1.png)
+
+- Po włączeniu światła wyświetlane są wszystkie jego parametry, które można z łatwością zmieniać klikając przycisk ```change```
+
+![](images/light2.png)
+
+- Zmienione parametry
+
+![](images/light3.png)
 
 ## Testowanie
 
