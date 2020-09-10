@@ -23,7 +23,7 @@ python main.py
 
 ## Konfiguracja
 
-Cała konfiguracja aplikacja jest wczytywana z pliku [config.json](https://github.com/nazkord/IntelligentHome/blob/master/config.json)
+Cała konfiguracja aplikacji jest wczytywana z pliku [config.json](https://github.com/nazkord/IntelligentHome/blob/master/config.json)
 
 ### Przykładowa konfiguracja pokoju
 
@@ -64,7 +64,7 @@ Cała konfiguracja aplikacja jest wczytywana z pliku [config.json](https://githu
 ```
 - ```"name"``` – nazwa pokoju
 - ```"lighting"``` – tablica oświetlenia w pokoju
-### Przykładowa Konfiguracja lampy
+### Przykładowa konfiguracja lampy
 ```json
 {
     "name": "main",
@@ -101,7 +101,23 @@ Cała konfiguracja aplikacja jest wczytywana z pliku [config.json](https://githu
 
 ![](images/light3.png)
 
+## Działanie aplikacji
+
+- Po każdym wciśnięciu przycisku ```change``` wysyłany jest za pomocą Publisher'a komunikat z odpowiednim tematem do brokera MQTT.
+- W osobnym wątku uruchomiony jest Subscriber, który nasłuchuje zdarzenia wysyłane z urzadzeń, dzięki czemu wizualizacja pilota jest zawsze aktualna.
+
 ## Testowanie
+
+Aby samemu przetestować działanie aplikacji, należy za pomocą wiersza poleceń wysłać przykładowe komunikaty do brokera MQTT.
+Przykłady komunikat:
+- Temat: ```room/<room_name>/light/<light_name>/<parameter_to_change>```
+- Treść: ```<new value of parameter>``` <br>
+Wysyłanie komunikatu odbywa się za pomocą ```mosquitto_pub```
+Przykładowe wysyłanie komunikatu:
+- ```mosquitto_pub -t room/bathroom/light/main/power -m ON```
+Przykład działania:
+
+
 
 ## Rozwijanie aplikacji
 
