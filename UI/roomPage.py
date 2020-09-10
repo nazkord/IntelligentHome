@@ -54,7 +54,6 @@ class RoomPage(Frame):
         self.power_label.pack(pady=10)
         self.power_button = Button(self, text=('Turn %s' %self.light.power_button_text()), 
                 command=lambda: self.publisher.publish(self.light.location + "/power", self.light.power_button_text()),
-                # command=lambda: self.light.change_power(),
                 foreground=self.light.power_button_color())
         self.power_button.pack()
 
@@ -68,7 +67,6 @@ class RoomPage(Frame):
         self.brightness_scale.pack()
         self.brightness_button = Button(self, text='Change', 
             command=lambda: self.publisher.publish(self.light.location + "/brightness", self.brightness_scale.get()))
-            # command=lambda: self.light.change_brightness(self.brightness_scale.get()))
         self.brightness_button.pack(pady=3)
 
 
@@ -82,5 +80,4 @@ class RoomPage(Frame):
         self.color_combobox.pack(pady=3)
         self.color_button = Button(self, text='Change',
             command=lambda: self.publisher.publish(self.light.location + "/color", self.color_combobox.get()))
-            # command=lambda: self.light.change_color(self.color_combobox.get()))
         self.color_button.pack(pady=3)
