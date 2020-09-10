@@ -84,12 +84,12 @@ Cała konfiguracja aplikacji jest wczytywana z pliku [config.json](https://githu
 
 ![](images/main1.png)
 
-- U góry znajduję się menubar z której wybiera się konkretny pokój. Po wybraniu konkretnego pokoju wyświetlana jest lista świateł. 
+- U góry znajduję się menubar z którego wybiera się konkretny pokój. Po wybraniu konkretnego pokoju wyświetlana jest lista świateł. 
 
 ![](images/room1.png)
 
-- Również z poziomu każdego pokoju/ekranu można wyjść z aplikacji korzystając z przycisku ```exit```
-- Każde światło domyślnie jest wyłaczone więc najpierw należy go włączyć
+- Także z poziomu każdego pokoju/ekranu można wyjść z aplikacji korzystając z przycisku ```exit```
+- Każde światło domyślnie jest wyłaczone, więc najpierw należy go włączyć
 
 ![](images/light1.png)
 
@@ -112,13 +112,25 @@ Aby samemu przetestować działanie aplikacji, należy za pomocą wiersza polece
 Przykłady komunikat:
 - Temat: ```room/<room_name>/light/<light_name>/<parameter_to_change>```
 - Treść: ```<new value of parameter>``` <br>
-Wysyłanie komunikatu odbywa się za pomocą ```mosquitto_pub```
+Wysyłanie komunikatu odbywa się za pomocą ```mosquitto_pub``` <br>
 Przykładowe wysyłanie komunikatu:
 - ```mosquitto_pub -t room/bathroom/light/main/power -m ON```
 Przykład działania:
+- Uruchomione komendy oraz logi z ```subscriber'a```
 
+![](images/testExample1.png)
 
+- Zaktualizowany widok pilota
+
+![](images/textExample2.png)
 
 ## Rozwijanie aplikacji
+
+Aplikacja jest otwarta na kolejne rozszerzenia, dzięki temu, że przy jej tworzeniu, użyłem dużo klas, które pozwalają w łatwy sposób rozszerzyć aplikacje o nowe urządzenia.
+Aby wprowadzić kolejne urządzenia w pokojach (drzwi, okna) wystarczy wykonać następujące kroki:
+- Dodać nowe urządzenie do pliku konfiguracyjnego JSON
+- Dodać metodę parsującą te urządzenie do Parser'a
+- Dodać UI odpowiadający za wyświetlenie oraz zmianę parametrów tego urządzenia
+- Dodać do Subscriber'a metodę aktualizującą stan urządzenia.
 
 Done by [nazkord](https://github.com/nazkord)
